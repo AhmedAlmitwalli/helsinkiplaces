@@ -1,4 +1,4 @@
-# CodeIgniter 4 Framework
+# Helsinki Places
 
 ## What is CodeIgniter?
 
