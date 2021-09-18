@@ -8,8 +8,8 @@
 
 ## What's New?
     1. Get place/area in Helsinki in real time
-    2. Save and edit or Delete Ypur Places
-    3. Click on mao and get information about clicked location
+    2. Save and edit or Delete Places
+    3. Click on Map and get information about clicked location
     4. Search by keywords buttons and get locations about Hotels, banks, and more.
 
 ## Tools
@@ -22,10 +22,10 @@
     1. Clone or Download this Project
     2. Move it to xampp/htdocs or var/www/html or like
     3. Go to app>Views>home.php and change API_KEY in script src with Your API_KEY
-    4. Create Database with name "helsinki_places" and crate table with :
-        "id"-> int11               |   "title"->text         |   "description"-> text
-        "latitude"->text           |   "longitude"-> text     
-        "open"->tex"id"-> text     |   "keywords"->text
+    4. Create Database with name "helsinki_places" and crate table with this names:
+        "id"-> "type"=int11               |   "title"->"type"=text         |   "description"-> "type"=text
+        "latitude"->"type"=text           |   "longitude"-> "type"=text     
+        "open"->"type"=text     |   "keywords"->"type"=text
     5. Search in .env file for #DATABASE and change default value to ypur new created one.
 
     
