@@ -1,56 +1,36 @@
+
 # Helsinki Places
 
-## What is CodeIgniter?
-
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](http://codeigniter.com).
-
-This repository holds the distributable version of the framework,
-including the user guide. It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
-
-More information about the plans for version 4 can be found in [the announcement](http://forum.codeigniter.com/thread-62615.html) on the forums.
-
-The user guide corresponding to this version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+#### Find places in helsinki, click on Map and get info, and Show Current Location using Google Maps API
 
 
-## Important Change with index.php
+### Demo | https://helsinkiplaces.tech
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+## What's New?
+    1. Get place/area in Helsinki in real time
+    2. Save and edit or Delete Ypur Places
+    3. Click on mao and get information about clicked location
+    4. Search by keywords buttons and get locations about Hotels, banks, and more.
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+## Tools
+    1. PHP - CodeIgniter 4 Freamwork
+    2. Google Maps API Places API For Web and Maps Javascript API
+    3. CSS - fontawesome.com
+    4. javascript
 
-**Please** read the user guide for a better explanation of how CI4 works!
+## Installation
+    1. Clone or Download this Project
+    2. Move it to xampp/htdocs or var/www/html or like
+    3. Go to app>Views>home.php and change API_KEY in script src with Your API_KEY
+    4. Create Database with name "helsinki_places" and crate table with :
+        "id"-> int11               |   "title"->text         |   "description"-> text
+        "latitude"->text           |   "longitude"-> text     
+        "open"->tex"id"-> text     |   "keywords"->text
+    5. Search in .env file for #DATABASE and change default value to ypur new created one.
 
-## Repository Management
+    
+## Author
 
-We use Github issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+- [@Ahmed Almitwalli](https://github.com/almitwalli)
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Contributing
-
-We welcome contributions from the community.
-
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
-
-## Server Requirements
-
-PHP version 7.3 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
-- xml (enabled by default - don't turn it off)
+  
