@@ -25,7 +25,7 @@
     4. Create Database with name "helsinki_places" and crate table with this names:
         "id"-> "type"=int11               |   "title"->"type"=text         |   "description"-> "type"=text
         "latitude"->"type"=text           |   "longitude"-> "type"=text     
-        "open"->"type"=text     |   "keywords"->"type"=text
+        "open"->"type"=text               |   "keywords"->"type"=text
     5. Search in .env file for #DATABASE and change default value to ypur new created one.
 
     
